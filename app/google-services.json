@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "425203418789",
+    "firebase_url": "https://bbettingtips-83867.firebaseio.com",
+    "project_id": "bbettingtips-83867",
+    "storage_bucket": "bbettingtips-83867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425203418789:android:c16c9a9215767e9d",
+        "android_client_info": {
+          "package_name": "com.example.bbettingtips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425203418789-oibq0gblfr6fd0qcc174iu8ovrvfrtt0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bbettingtips",
+            "certificate_hash": "de99c799de5baf15d8c7765b4e6637764ecfe74f"
+          }
+        },
+        {
+          "client_id": "425203418789-ivtksggimjrlqdjd8pv2bequmqq483ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASjtsDSMtZKpzkYZdrkRF5MqoFXcfMHHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425203418789-ivtksggimjrlqdjd8pv2bequmqq483ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:text="Start Time" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+
+                android:layout_marginStart="8dp"
+
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Home Team"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="VS"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toEndOf="@+id/textHteam"
+                app:layout_constraintTop_toBottomOf="@+id/textHteam" />
+
+
+            <TextView
+                android:id="@+id/textAteam"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_above="@+id/textView"
+                android:layout_alignTop="@+id/textView"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Away Team"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.18"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.637" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/btnWon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Won"
+                app:layout_constraintEnd_toStartOf="@+id/textAteam"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btnLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Lost"
+                app:layout_constraintBottom_toTopOf="@+id/textAteam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.757"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <TextView
+                android:id="@+id/txtPushKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textAteam"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/btnWon"
+                app:layout_constraintVertical_bias="0.944" />
+
+            <LinearLayout
+                android:id="@+id/lnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textAteam"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.902">
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableTop="@drawable/ic_edit"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textAteam"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.785" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="edit" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtOdds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="Odds"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/txtPred"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtPred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:text="Prediction"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/txtPred"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="Won"
+                android:textColor="@android:color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

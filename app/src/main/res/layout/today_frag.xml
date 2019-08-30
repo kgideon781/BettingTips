@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MyRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="678dp"
+        android:layout_above="@+id/addGame"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addGame"
+        android:text="Add Game"/>
+
+</RelativeLayout>
